@@ -30,7 +30,7 @@ export default function Top_panel({ data, setdata }){
                 part: "snippet",
                 q: query,
                 type: "video",
-                maxResults: 10,
+                maxResults: 1000,
                 key: "AIzaSyCCRU7MzJx85y_QID0fXAUwqaRaUO4hBtU"
                 });
             
@@ -38,6 +38,7 @@ export default function Top_panel({ data, setdata }){
                 const res = await fetch(`${url}?${params}`);
                 const data = await res.json();
                 console.log(data.items);
+                setdata(data.items)
             } catch (err) {
                 console.error(err);
             }

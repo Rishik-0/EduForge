@@ -2,7 +2,8 @@ import React from "react";
 import Background from "../components/background/Background";
 import { useState } from "react";
 import Top_panel from "../components/top-panel/Top_panel";
-import HomeCard from "../components/cards/Homecard";
+import Homecard from "../components/cards/Homecard";
+
 
 
 function Home(){
@@ -12,7 +13,7 @@ function Home(){
         
         <Top_panel data={data} setdata={setdata}/>
         <Background />
-        <Homecard/>
+        <Homecard data={data}/>
         </>
     );
 
