@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Background from "../components/background/Background";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Signup(){
+
     const navigate = useNavigate();
 
     const handleSignUp = () =>{
         navigate("/login")
     }
+
+    const [username,setusername] = useState("");
+    const [password,setpassword] = useState("");
+
+
 
     return(
         <>
@@ -34,10 +40,22 @@ function Signup(){
                 <p> Already have an account? <Link to='/login' ><b>Login here</b></Link></p>
                 <form className="signup-form">
                     <label for="username">Username</label>
-                    <input type="text" id="username " placeholder="Enter username"/>
+                    <input type="text" id="username" 
+                    placeholder="Enter username"
+                    value={username}
+                    onChange={(e) => setusername(e.target.value)}
+                    required
+                    />
                     
                     <label for="signup-pass">Password</label>
-                    <input type="password" id="signup-pass" placeholder="Password"/>    
+                    <input type="password" 
+                    id="signup-pass" 
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setpassword(e.target.value)}
+                    required
+
+                    />    
                     
                     <label for="signup-confirm-pass">Confirm Password</label>
                     <input type="password" id="signup-confirm-pass" placeholder="Confirm Password"/>
