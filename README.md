@@ -8,7 +8,7 @@ EduForge is a clean, distraction-free educational platform designed to deliver h
 ## 🔗 Live Demo
 
 You can check out the live, deployed version of the platform here:  
- **[EduForge Live Website](https://edu-forge-qu3omxzej-saharsh-baijus-projects.vercel.app/)**
+ **[EduForge Live Website](https://edu-forge-b7331zjig-saharsh-baijus-projects.vercel.app/)**
 
 
 ## 🚀 Features
@@ -41,8 +41,8 @@ You can check out the live, deployed version of the platform here:
 
 ## 👥 Team Members & Roles
 
-* **Saharsh Baiju** — *[Role]*
-* **Rishik Raj P** — *[Role]*
-* **Dev Narayan U** — *[Role]*
-* **Kashyap S** — *[Role]*
-* **Rajiv A R** — *[Role]*
+* **Saharsh Baiju** — *Frontend implementation(react), 3d design implementaton, Database generation, Deployement*
+* **Rishik Raj P** — *Frontend implementation(react)+Backend*
+* **Dev Narayan U** — *Frontend implementation ,Login logic*
+* **Kashyap S** — *Bug tester, Front end, Documentation*
+* **Rajiv A R** — *Xp logic, Gamification features*
